@@ -1,0 +1,3 @@
+TemplateID,TemplateName,DBBricks,SEBricks,Chips,ITStack,EncryptionLibs,SecureBoot
+1,Standard Kitchen Appliance,"Brick-A, Brick-B",Brick-X,"Chip123, Chip124",Linux,OpenSSL,Yes
+2,Advanced Cleaning Appliance,Brick-C,"Brick-Y, Brick-Z",Chip456,Android,WolfSSL,No

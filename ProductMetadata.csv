@@ -1,0 +1,3 @@
+MetadataID,ReferenceID,TemplateID,DBBricks,SEBricks,Chips,ITStack,EncryptionLibs,SecureBoot
+1,1,1,"Brick-A, Brick-B",Brick-X,Chip123,Linux,OpenSSL,Yes
+2,2,1,"Brick-A, Brick-B",Brick-X,Chip123,Linux,OpenSSL,Yes

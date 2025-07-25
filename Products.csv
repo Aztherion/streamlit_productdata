@@ -1,0 +1,3 @@
+ProductID,ProductName,PIMLink,OfferOwner,ProductManager,SecurityAdvisor,VulnerabilityHandler,CertificationEngineer,VP,SVP
+1,Ultra Blender,https://pim.example.com/ultra_blender,jane.doe@example.com,paul.mgr@example.com,sec.advisor1@example.com,vuln.handler1@example.com,cert.eng1@example.com,vp1@example.com,svp1@example.com
+2,MaxVac Vacuum,https://pim.example.com/maxvac_vacuum,john.smith@example.com,rita.pm@example.com,sec.advisor2@example.com,vuln.handler2@example.com,cert.eng2@example.com,vp2@example.com,svp2@example.com
