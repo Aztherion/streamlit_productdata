@@ -328,7 +328,11 @@ elif choice == "CRA Planning":
 
             if submitted:
                 cur = conn.cursor()
-                cur.execute("UPDATE products SET CRAPlan = ?, CRA_EoL_Date = ?, CRA_StopSell_VPApproved = ?, CRA_StopSell_Flagged = ? WHERE ProductID = ?", (
+                cur.execute("""
+                    UPDATE products
+                    SET CRAPlan = ?, CRA_EoL_Date = ?, CRA_StopSell_VPApproved = ?, CRA_StopSell_Flagged = ?
+                    WHERE ProductID = ?
+                """, (
                     plan_option,
                     eol_date.strftime("%Y-%m-%d") if plan_option == "EoL" and eol_date else "",
                     approved,
