@@ -346,11 +346,11 @@ elif choice == "CRA Planning":
                 flagged,
                 selected_id
             ))
-                cur.execute("UPDATE products SET CRAPlan = ?, CRA_EoL_Date = ? WHERE ProductID = ?", (
-                    plan_option,
-                    eol_date.strftime("%Y-%m-%d") if plan_option == "EoL" and eol_date else "",
-                    selected_id
-                ))
+            cur.execute("UPDATE products SET CRAPlan = ?, CRA_EoL_Date = ? WHERE ProductID = ?", (
+                plan_option,
+                eol_date.strftime("%Y-%m-%d") if plan_option == "EoL" and eol_date else "",
+                selected_id
+            ))
 
 
 elif choice == "CRA Stop-Sell Flags":
