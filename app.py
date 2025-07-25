@@ -363,7 +363,7 @@ elif choice == "CRA Stop-Sell Flags":
     """, conn)
 
     if flagged_products.empty:
-		st.info("Shouldn't be here")
+        st.info("Shouldn't be here")
     else:
         st.warning("The following products are flagged for VP approval:")
         st.dataframe(flagged_products)
