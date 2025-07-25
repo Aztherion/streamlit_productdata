@@ -99,16 +99,16 @@ elif choice == "Vulnerability Handling":
 
                     submitted = st.form_submit_button("Submit")
 
-    if submitted:
+		if submitted:
             cur = conn.cursor()
-        cur.execute("UPDATE products SET CRAPlan = ?, CRA_EoL_Date = ?, CRA_StopSell_VPApproved = ?, CRA_StopSell_Flagged = ? WHERE ProductID = ?", (
-            plan_option,
-            eol_date.strftime("%Y-%m-%d") if plan_option == "EoL" and eol_date else "",
-            approved,
-            flagged,
-            selected_id
-        ))
-        conn.commit()
+			cur.execute("UPDATE products SET CRAPlan = ?, CRA_EoL_Date = ?, CRA_StopSell_VPApproved = ?, CRA_StopSell_Flagged = ? WHERE ProductID = ?", (
+				plan_option,
+				eol_date.strftime("%Y-%m-%d") if plan_option == "EoL" and eol_date else "",
+				approved,
+				flagged,
+				selected_id
+			))
+			conn.commit()
 
 elif choice == "Product Search & Edit":
     st.subheader("🔍 Product Search & Management")
@@ -364,6 +364,7 @@ elif choice == "CRA Stop-Sell Flags":
     """, conn)
 
     if flagged_products.empty:
+		st.info("Shouldn't be here")
     else:
         st.warning("The following products are flagged for VP approval:")
         st.dataframe(flagged_products)
