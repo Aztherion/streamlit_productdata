@@ -209,8 +209,7 @@ elif choice == "Role-Based Access":
     elif role == "Editor":
         st.info("✏️ Can also edit existing products and assign metadata.")
     elif role == "Admin":
-
-    st.markdown("⚠️ This is a mock role selector for demo purposes. In a real deployment, roles would be validated via login.")
+		st.markdown("⚠️ This is a mock role selector for demo purposes. In a real deployment, roles would be validated via login.")
 
 
 elif choice == "Dashboard Analytics":
